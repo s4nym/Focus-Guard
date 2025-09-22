@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extension</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Honk&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="/libs/fontt.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="assets/git.png" alt="" class="ii">
+            <span class="heading">Focus Guard</span>
+            <img src="assets/git.png" alt="" class="ss">
+        </div>
+        <div class="card">
+            <span class="cf">Current Focus</span>
+            <div class="buttonss">
+                <div class="container-eg-btn-5">
+                    <a class="button" id="jee">JEE</a>
+                    <a class="button" id="neet">NEET</a>
+                    <a class="button" id="others">Others</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <span class="cf">Filtering Mode</span>
+            <div class="buttonss">
+                <div class="container-eg-btn-5">
+                    <a class="mode-button" id="strict">Strict</a>
+                    <a class="mode-button" id="moderate">Moderate</a>
+                    <a class="mode-button" id="relaxed">Relaxed</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <span class="cf">API Configuration</span>
+            <div class="api-config">
+                <input type="password" id="apiKeyInput" placeholder="Enter your Groq API key" class="api-input">
+                <button id="saveApiKey" class="api-button">Save Key</button>
+                <div id="apiStatus" class="api-status"></div>
+            </div>
+        </div>
+        <div class="chart-container">
+            <span class="chart-title">Website Closures Over Days</span>
+            <canvas id="myChart" width="400" height="200" class="chart"></canvas>
+        </div>
+        <script src="popup.js"></script>
+        <script src="/libs/chart.min.js"></script>
+        <div class="footer-text">
+            Made with <span>&#10084;</span> by <a class="ab"
+                href="https://github.com/sanyam">Sanyam</a>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
